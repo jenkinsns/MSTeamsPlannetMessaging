@@ -1,0 +1,53 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.6/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.6",
+    "id": "fc92a180-c69b-11ea-ad76-fdb9619eea95",
+    "version": "0.0.1",
+    "packageName": "msteamsplannetmessaging",
+    "developer": {
+        "name": "JPOWER4",
+        "websiteUrl": "https://firstmessageextensiondeco.azurewebsites.net",
+        "privacyUrl": "https://firstmessageextensiondeco.azurewebsites.net/privacy.html",
+        "termsOfUseUrl": "https://firstmessageextensiondeco.azurewebsites.net/tou.html"
+    },
+    "name": {
+        "short": "MSTeamsPlannetMessaging",
+        "full": "MSTeamsPlannetMessaging"
+    },
+    "description": {
+        "short": "TODO: add short description here",
+        "full": "TODO: add full description here"
+    },
+    "icons": {
+        "outline": "icon-outline.png",
+        "color": "icon-color.png"
+    },
+    "accentColor": "#D85028",
+    "configurableTabs": [],
+    "staticTabs": [],
+    "bots": [],
+    "connectors": [],
+    "composeExtensions": [{
+        "botId": "cdd70fc2-1e9a-4b01-a0c3-b233e44d39c7",
+        "canUpdateConfiguration": false,
+        "commands": [{
+            "id": "planetExpanderAction",
+            "type": "action",
+            "title": "Planet Expander",
+            "description": "Lookup the details of a planet.",
+            "context": [
+                "compose",
+                "message"
+            ],
+            "fetchTask": true
+        }]
+    }],
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ],
+    "validDomains": [
+        "firstmessageextensiondeco.azurewebsites.net"
+    ],
+    "showLoadingIndicator": false
+}
